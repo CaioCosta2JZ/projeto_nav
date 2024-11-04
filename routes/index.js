@@ -10,12 +10,6 @@ router.get('/', async  (req, res)  => {
     });
 });
 
-router.get('/views/fotos.ejs', async  (req, res)  => {
-    res.render("base", {
-        title: "Home",
-        view: "home"
-    });
-});
 
 router.get('/views/cadastro.ejs', async  (req, res)  => {
     res.render("base", {
@@ -24,7 +18,7 @@ router.get('/views/cadastro.ejs', async  (req, res)  => {
     });
 });
 
-router.get('/views/cadastro.ejs', async  (req, res)  => {
+router.get('/views/quemsomos.ejs', async  (req, res)  => {
     res.render("base", {
         title: "Home",
         view: "home"
