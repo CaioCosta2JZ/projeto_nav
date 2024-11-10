@@ -2,12 +2,12 @@ const express = require('express');
 const router = express.Router();
 
 // Página inicial
-router.get('/', (req, res) => {
+router.get('/', async(req, res) => {
     res.render("index", { title: "Home" });
 });
 
 // Página "Quem Somos"
-router.get('/quemsomos', (req, res) => {
+router.get('/quemsomos', async(req, res) => {
     res.render("quemsomos", { title: "Quem Somos" });
 });
 
