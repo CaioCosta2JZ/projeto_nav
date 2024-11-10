@@ -1,27 +1,18 @@
-const express  = require('express');
+const express = require('express');
 const router = express.Router();
 
-
-//Mostrar a index.ejs
-router.get('/', async  (req, res)  => {
-    res.render("base", {
-        title: "Home",
-        view: "home"
+// Mostrar a página inicial (index.ejs)
+router.get('/', async (req, res) => {
+    res.render("index", { // Carregar o arquivo `index.ejs` diretamente
+        title: "Home"
     });
 });
 
-
-router.get('/views/cadastro.ejs', async  (req, res)  => {
-    res.render("base", {
-        title: "Home",
-        view: "home"
+// Rota para a página "Quem Somos" (quemsomos.ejs)
+router.get('/quemsomos', async (req, res) => { // Corrigi a rota para "/quemsomos" sem a extensão .ejs
+    res.render("quemsomos", { // Carregar o arquivo `quemsomos.ejs` diretamente
+        title: "Quem somos"
     });
 });
 
-router.get('/views/quemsomos.ejs', async  (req, res)  => {
-    res.render("base", {
-        title: "Home",
-        view: "home"
-    });
-});
 module.exports = router;
