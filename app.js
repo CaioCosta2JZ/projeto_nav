@@ -23,6 +23,8 @@ app.use("/alunos", alunoRouter);
 app.use("/quemsomos", quemsomosRouter);
 
 // Configurar porta
-
+app.listen(300, () =>{
+    console.log("Servidor rodando na porta 3000");
+})
 
 module.exports = app;
