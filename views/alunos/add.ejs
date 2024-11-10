@@ -1,8 +1,10 @@
-<h1 class="text-center">Adicionar Aluno</h1>
-<form action="/alunos/add" method="POST" class="mt-4">
-    <div class="mb-3">
-        <label for="nome" class="form-label">Nome</label>
-        <input type="text" class="form-control" id="nome" name="nome">
-    </div>
-    <button type="submit" class="btn btn-success">Adicionar</button>
-</form>
+<%- include("base", { title: "Adicionar Aluno", body: `
+    <h1 class="text-center">Adicionar Aluno</h1>
+    <form action="/alunos/add" method="POST" class="mt-4">
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nome" name="nome">
+        </div>
+        <button type="submit" class="btn btn-success">Adicionar</button>
+    </form>
+` }) %>
