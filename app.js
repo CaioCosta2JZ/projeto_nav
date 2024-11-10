@@ -8,7 +8,7 @@ app.set("views", path.join(__dirname, "src/views"));
 app.set("view engine", "ejs");
 
 // Configurar diretório para arquivos estáticos
-app.use(express.static(path.join(__dirname, "public/assets")));
+app.use(express.static(path.join(__dirname, "public")));
 
 // Importar rotas
 const indexRouter = require("./src/routes/index");
@@ -23,3 +23,5 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Servidor rodando na porta ${port}`);
 });
+
+module.exports = app;
