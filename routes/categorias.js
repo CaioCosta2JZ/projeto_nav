@@ -1,31 +1,31 @@
-const express  = require('express');
+const express = require('express');
 const router = express.Router();
 
 
 //Listar as categorias - show.ejs
-router.get('/', async  (req, res)  => {
+router.get('/', async (req, res) => {
     res.render("base", {
-        title: "Categoria",
-        view: "categorias/show"
+        title: "Alunos",
+        view: "alunos/show"
     });
 });
 
 
 
 //Add categorias - add.ejs
-router.get('/add', async  (req, res)  => {
+router.get('/add', async (req, res) => {
     res.render("base", {
-        title: "Adicionar Categorias",
-        view: "categorias/add"
+        title: "Adicionar Alunos",
+        view: "alunos/add"
     });
 });
 
 //Editar categorias - edit.ejs
-router.get('/edit', async  (req, res)  => {
+router.get('/edit', async (req, res) => {
     res.render("base", {
-        title: "Editar Categorias",
-        view: "categorias/edit"
+        title: "Editar Alunos",
+        view: "alunos/edit"
     });
 });
 
-module.exports =  router;
+module.exports = router;

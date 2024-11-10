@@ -6,22 +6,15 @@ const router = express.Router();
 router.get('/', async  (req, res)  => {
     res.render("base", {
         title: "Home",
-        view: "home"
+        view: "index"
     });
 });
 
 
-router.get('/views/cadastro.ejs', async  (req, res)  => {
+router.get('/quemsomos.ejs', async  (req, res)  => {
     res.render("base", {
-        title: "Home",
-        view: "home"
-    });
-});
-
-router.get('/views/quemsomos.ejs', async  (req, res)  => {
-    res.render("base", {
-        title: "Home",
-        view: "home"
+        title: "Quem somos",
+        view: "quemsomos"
     });
 });
 module.exports = router;
