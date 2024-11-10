@@ -13,10 +13,14 @@ app.use(express.static(path.join(__dirname, "public")));
 // Importar rotas
 const indexRouter = require("./src/routes/index");
 const alunoRouter = require("./src/routes/alunos");
+const quemsomosRouter = require("./src/routes/index");
+
+
 
 // Usar as rotas
 app.use("/", indexRouter);
 app.use("/alunos", alunoRouter);
+app.use("/quemsomos", quemsomosRouter);
 
 // Configurar porta
 
