@@ -1,5 +1,5 @@
 {
-  "name": "projetoyeenav",
+  "name": "Appyee",
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
@@ -12,5 +12,8 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.7"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }
