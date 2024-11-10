@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
+<<<<<<< HEAD
 // Mostrar a página inicial (index.ejs)
 router.get('/', async (req, res) => {
     res.render("index", { // Carregar o arquivo `index.ejs` diretamente
@@ -16,3 +17,22 @@ router.get('/quemsomos', async (req, res) => { // Corrigi a rota para "/quemsomo
 });
 
 module.exports = router;
+=======
+
+//Mostrar a index.ejs
+router.get('/', async  (req, res)  => {
+    res.render("base", {
+        title: "Home",
+        view: "index"
+    });
+});
+
+
+router.get('/quemsomos.ejs', async  (req, res)  => {
+    res.render("base", {
+        title: "Quem somos",
+        view: "quemsomos"
+    });
+});
+module.exports = router;
+>>>>>>> ddb626db0fb91774c883fc63b050f0b449f2ad1b
